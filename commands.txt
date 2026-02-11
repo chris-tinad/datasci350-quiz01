@@ -1,0 +1,218 @@
+Christinas-MacBook-Pro-916 :: ~ » git clone https://github.com/chris-tinad/datasci350-quiz01.git                                                                                         129 ↵
+Cloning into 'datasci350-quiz01'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 11 (delta 1), reused 10 (delta 1), pack-reused 0 (from 0)
+Receiving objects: 100% (11/11), done.
+Resolving deltas: 100% (1/1), done.
+Christinas-MacBook-Pro-916 :: ~ » ls
+Applications          Desktop               Downloads             Music                 Pictures              SimUText 2024-2025
+data_project          dev                   Library               my-project            Public                Zotero
+datasci350-quiz01     Documents             Movies                new-project           QTM302W-Group-Project
+Christinas-MacBook-Pro-916 :: ~ » cd datasci350-quiz01 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹main› » ls
+data      docs      README.md scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹main› » touch commands.txt
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹main*› » git checkout -b feature-update     
+Switched to a new branch 'feature-update'
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » mkdir reports
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » cd reports
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » touch summary.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » ls
+summary.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » cd ../
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » ls
+commands.txt data         docs         README.md    reports      scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » cd reports 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » ls
+summary.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » vim summary.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » cat summary.md 
+This document provides a summary of the project updates.
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » git add .
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » git status
+On branch feature-update
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   summary.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../commands.txt
+
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » git commit -m "Add reports diectory"
+[feature-update a85ffa8] Add reports diectory
+ 1 file changed, 1 insertion(+)
+ create mode 100644 reports/summary.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » ls
+summary.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » touch {file1.txt,file2.txt,file3.txt}
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » ls
+file1.txt  file2.txt  file3.txt  summary.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹feature-update*› » cd ../
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » ls
+commands.txt data         docs         README.md    reports      scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » cd data 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/data ‹feature-update*› » ls
+raw-data.csv
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/data ‹feature-update*› » mv raw-data.csv input-data.csv
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/data ‹feature-update*› » ls
+input-data.csv
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/data ‹feature-update*› » cd ../
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » ls
+commands.txt data         docs         README.md    reports      scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » cd scripts 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/scripts ‹feature-update*› » ls              
+01-setup.py          02-data-cleaning.py  03-data-modelling.py
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/scripts ‹feature-update*› » mkdir backup && cp *.py backup
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/scripts ‹feature-update*› » ls
+01-setup.py          02-data-cleaning.py  03-data-modelling.py backup
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/scripts ‹feature-update*› » cd backup 
+Christinas-MacBook-Pro-916 :: datasci350-quiz01/scripts/backup ‹feature-update*› » ls
+01-setup.py          02-data-cleaning.py  03-data-modelling.py
+Christinas-MacBook-Pro-916 :: datasci350-quiz01/scripts/backup ‹feature-update*› » cd ../
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/scripts ‹feature-update*› » cd ../
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » ls
+commands.txt data         docs         README.md    reports      scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » cd docs
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/docs ‹feature-update*› » ls
+documentation.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/docs ‹feature-update*› » rm documentation.md 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/docs ‹feature-update*› » git add .
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/docs ‹feature-update*› » ls
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/docs ‹feature-update*› » git status
+On branch feature-update
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    documentation.md
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    ../data/raw-data.csv
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../commands.txt
+	../data/input-data.csv
+	../reports/file1.txt
+	../reports/file2.txt
+	../reports/file3.txt
+	../scripts/backup/
+
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/docs ‹feature-update*› » cd ../
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » cd ../
+Christinas-MacBook-Pro-916 :: ~ » ls
+Applications          dev                   Movies                Pictures              Zotero
+data_project          Documents             Music                 Public
+datasci350-quiz01     Downloads             my-project            QTM302W-Group-Project
+Desktop               Library               new-project           SimUText 2024-2025
+Christinas-MacBook-Pro-916 :: ~ » cd datasci350-quiz01 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » ls
+commands.txt data         docs         README.md    reports      scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » git add .
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » git status
+On branch feature-update
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    data/raw-data.csv -> commands.txt
+	new file:   data/input-data.csv
+	deleted:    docs/documentation.md
+	new file:   reports/file1.txt
+	new file:   reports/file2.txt
+	new file:   reports/file3.txt
+	new file:   scripts/backup/01-setup.py
+	new file:   scripts/backup/02-data-cleaning.py
+	new file:   scripts/backup/03-data-modelling.py
+
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » git commit -m "Update project files"
+[feature-update 4ab720a] Update project files
+ 9 files changed, 1 deletion(-)
+ rename data/raw-data.csv => commands.txt (100%)
+ create mode 100644 data/input-data.csv
+ delete mode 100644 docs/documentation.md
+ create mode 100644 reports/file1.txt
+ create mode 100644 reports/file2.txt
+ create mode 100644 reports/file3.txt
+ create mode 100644 scripts/backup/01-setup.py
+ create mode 100644 scripts/backup/02-data-cleaning.py
+ create mode 100644 scripts/backup/03-data-modelling.py
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update› » git status
+On branch feature-update
+nothing to commit, working tree clean
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update› » touch .gitignore
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » ls
+commands.txt data         docs         README.md    reports      scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » ls -a
+.            .git         commands.txt docs         reports
+..           .gitignore   data         README.md    scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » echo "temp/
+dquote> dataset0?.csv" > .gitignore
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » cat .gitignore 
+temp/
+dataset0?.csv
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » git add .
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » git reset                          
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » git status
+On branch feature-update
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update*› » git add . && git commit -m "Add .gitignore file"
+[feature-update 70e4263] Add .gitignore file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 .gitignore
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update› » git status
+On branch feature-update
+nothing to commit, working tree clean
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update› » switch main
+zsh: command not found: switch
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹feature-update› » git switch main                       127 ↵
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹main› » git merge feature-update     
+Updating a430dd7..70e4263
+Fast-forward
+ .gitignore                          | 2 ++
+ data/raw-data.csv => commands.txt   | 0
+ data/input-data.csv                 | 0
+ docs/documentation.md               | 1 -
+ reports/file1.txt                   | 0
+ reports/file2.txt                   | 0
+ reports/file3.txt                   | 0
+ reports/summary.md                  | 1 +
+ scripts/backup/01-setup.py          | 0
+ scripts/backup/02-data-cleaning.py  | 0
+ scripts/backup/03-data-modelling.py | 0
+ 11 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ rename data/raw-data.csv => commands.txt (100%)
+ create mode 100644 data/input-data.csv
+ delete mode 100644 docs/documentation.md
+ create mode 100644 reports/file1.txt
+ create mode 100644 reports/file2.txt
+ create mode 100644 reports/file3.txt
+ create mode 100644 reports/summary.md
+ create mode 100644 scripts/backup/01-setup.py
+ create mode 100644 scripts/backup/02-data-cleaning.py
+ create mode 100644 scripts/backup/03-data-modelling.py
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹main› » ls
+commands.txt data         README.md    reports      scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹main› » cd reports 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹main› » ls
+file1.txt  file2.txt  file3.txt  summary.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹main› » vim summary.md 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹main*› » echo "This document provides a summary of the project updates." > summary.md 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹main› » cat summary.md 
+This document provides a summary of the project updates.
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹main› » ls
+file1.txt  file2.txt  file3.txt  summary.md
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01/reports ‹main› » cd ../
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹main› » ls
+commands.txt data         README.md    reports      scripts
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹main› » vim commands.txt 
+Christinas-MacBook-Pro-916 :: ~/datasci350-quiz01 ‹main› » 
+
